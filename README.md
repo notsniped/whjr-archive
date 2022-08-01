@@ -26,3 +26,5 @@ If you're willing to help me make the code better, or just straight-up complete 
 
 ## Known Bugs
 You tell me :)
+
+<h6>NKA 2022 | i use arch btw</h6>
