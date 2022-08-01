@@ -1,0 +1,38 @@
+.body_background {
+    background-image: url("https://i.postimg.cc/63cjmfvH/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#heading {
+    color: black; 
+    font-size: 40px;
+}
+#myCanvas {
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    font-size: 16px;
+}
+input {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn {
+    margin-left: 35px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}

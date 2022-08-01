@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+	  <title>AI Object Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body background="https://notsniped.github.io/AI-Object-Finder/background.jpg">
+    <center>
+      <h1 class="btn btn-info heading">
+        AI Object Finder 
+        <br>
+        <span style="color:black; font-size: 13px;">The input name which you will give should match the names present in the cocoSSD model, otherwise it may not detect the object.</span>
+      </h1>
+      <br>
+      <br>
+      <div class="form-group" style="width: 30%;">
+        <label>Object Name: </label>
+        <input type="text" class="form-control" id="object_name">
+        <br>
+        <br>
+        <button onclick="start()" class="btn btn-success">Start</button>
+      </div>
+      <h3 id="status" class="btn btn-danger"></h3>
+      <h3 id="object_status" class="btn btn-warning"></h3>
+    </center>
+    <script src="main.js"></script>
+  </body>
+</html>
