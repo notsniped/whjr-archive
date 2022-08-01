@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Case Study - 01</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="looks.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="shortcut icon" href="icon01.png">
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <noscript style="position: fixed; background: white; z-index: 100; width: 100%; text-align: center; font-size: 16px; padding: 4.5px;">This app needs JavaScript to process these images. Turn it on in <a href="ms-settings-privacy://">Settings</a>.</noscript>
+    <body>
+        <center>
+            <div id="top-info-bar">
+                <h2>CASE STUDY <img src="icon01.png"></h2>
+            </div>
+            <br><br>
+            <div class="container">
+                <div id="card-1" class="element-card">
+                    <label>1) A Tree:</label>
+                    <br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg" title="Image of a tree from Wikipedia" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-1"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-1"></label> 
+                    <div class="results" id="results-1" class="bob3">
+                        <p>From these results, <span id="accuracy-target-1"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-2" class="element-card">
+                    <label>2) A Water Bottle:</label>
+                    <br>
+                    <img src="https://4.imimg.com/data4/PV/SB/MY-5528627/drinking-mineral-water-bottle-500x500.jpg" title="Some H2O" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-2"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-2"></label> 
+                    <div class="results" id="results-2" class="bob3">
+                        <p>From these results, <span id="accuracy-target-2"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-3" class="element-card">
+                    <label>3) An iPhone:</label>
+                    <br>
+                    <img src="https://canadanewsmedia.ca/wp-content/uploads/2020/10/iphone12firstimpressions.jpg" title="An iPhone 12 Pro" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-3"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-3"></label> 
+                    <div class="results" id="results-3" class="bob3">
+                        <p>From these results, <span id="accuracy-target-3"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-4" class="element-card">
+                    <label>4) A Book:</label>
+                    <br>
+                    <img style="width: 600px;" src="https://media.newyorker.com/photos/5fc53ea865b1e636a7ab47b7/master/w_1600%2Cc_limit/TNY-BestBooks2020-EPJones.jpg" title="An Interesting Read" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-4"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-4"></label> 
+                    <div class="results" id="results-4" class="bob3">
+                        <p>From these results, <span id="accuracy-target-4"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-5" class="element-card">
+                    <label>5) A Laptop:</label>
+                    <br>
+                    <img style="width: 585px;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011?wid=1280&hei=1190&fmt=jpeg&qlt=80&.v=1613672894000" title="A 2021 M1-Based MacBook Pro " class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-5"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-5"></label> 
+                    <div class="results" id="results-5" class="bob3">
+                        <p>From these results, <span id="accuracy-target-5"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-6" class="element-card">
+                    <label>6) Pizza:</label>
+                    <br>
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=85" title="Yummy" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-6"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-6"></label> 
+                    <div class="results" id="results-6" class="bob3">
+                        <p>From these results, <span id="accuracy-target-6"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-7" class="element-card">
+                    <label>7) An Apple:</label>
+                    <br>
+                    <img src="data:image/jpeg;base64,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" title="An Apple" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-7"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-7"></label> 
+                    <div class="results" id="results-7" class="bob3">
+                        <p>From these results, <span id="accuracy-target-7"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-8" class="element-card">
+                    <label>8) A Car:</label>
+                    <br>
+                    <img style="width: 550px;" src="https://image.cnbcfm.com/api/v1/image/105796174-1552653879432gettyimages-1130590361r.jpg?v=1584381967" title="A Tesla Model Y" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-8"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-8"></label> 
+                    <div class="results" id="results-8" class="bob3">
+                        <p>From these results, <span id="accuracy-target-8"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-9" class="element-card">
+                    <label>9) Test Image Placeholder:</label>
+                    <br>
+                    <img style="width: 450px;" src="https://ae01.alicdn.com/kf/HTB1KiYZgmfD8KJjSszhq6zIJFXah/125V-North-America-15A-American-Standard-power-outlet-beauty-UL-certification-regulations-double-socket-UL15A.jpg" title="A US Power Outlet" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-9"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-9"></label> 
+                    <div class="results" id="results-9" class="bob3">
+                        <p>From these results, <span id="accuracy-target-9"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div id="card-10" class="element-card">
+                    <label>10) A Ceiling Fan:</label>
+                    <br>
+                    <img style="width: 455px;" src="https://media.croma.com/image/upload/v1613813847/Croma%20Assets/Small%20Appliances/Fans/Images/232431_a5ajcf.png" title="A Ceiling Fan" class="img-responsive">
+                    <br>
+                    <span>What MobileNet sees: </span>&nbsp;<label id="result-mobilenet-10"></label>
+                    <br>
+                    <span>What Microsoft Azure sees: </span>&nbsp;<label id="result-azure-10"></label> 
+                    <div class="results" id="results-10" class="bob3">
+                        <p>From these results, <span id="accuracy-target-10"><b>we don't know who</b></span> is more accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="copyright-footer">
+                <label>2007-2021 | Developed by notsniped.iso</label>
+            </div>
+        </center>
+    </body>
+    <script src="runtime.js"></script>
+</html>

@@ -1,0 +1,16 @@
+h3 {
+    font-size: 25px !important;
+}
+.btn-success:hover {
+    background-color: firebrick;
+}
+canvas {
+    animation-name: shadowshift;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 4px;
+}
+@keyframes shadowshift {
+    from {box-shadow: 0 0px 7px 0 yellow;}
+    to {box-shadow: 0 0px 7px 0 red;}
+}
