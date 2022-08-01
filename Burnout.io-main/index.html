@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body{
+				background-image: url("RacingBG.gif");
+    			background-position: center;
+    			background-size: cover;
+			}
+			#myCanvas {
+				border-width:10px;
+				background-color: white; 
+				border-style: ridge;
+			}
+			h1,h4 {
+				color: white !important;
+			}
+		</style>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>Burnout</title>
+	</head>
+	<noscript>Please turn on JavaScript to run this application.</noscript>
+	<body onload="add();">
+		<center>
+			<h1>Burnout</h1>
+			<h1>Game Status: <span id="Label_WinnerStatus"></span></h1>
+			<!--Canvas coding starts from here-->
+			<canvas id="myCanvas" width="800" height="600"></canvas>
+			<h4>
+				<b class="text-danger">NOTE: </b> IF CAR 1 ISN'T VISIBLE, PRESS ANY ARROW KEY.
+				<br>
+				IF CAR 2 ISN'T VISIBLE, PRESS W, A, S, OR D.
+			</h4>
+		</center>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>AI Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+    </head>
+    <body background="ping_pong_background.jpg">
+        <center>
+            <h1 class= "btn btn-warning heading">AI Ping Pong</h1>
+            <br>
+            <br>
+            <button id="instruction" data-toggle='modal' data-target='#myModal' class="btn btn-primary">Instructions</button>
+            <button id="play" onclick="startGame()">Play</button>
+            <button id="restart" class="btn btn-danger" onclick="restart()">Restart Game</button>
+            <br>
+            <div id="canvas"></div>
+            <h4 class='copy_right_footer'>Made and developed by: <a href='https://github.com/notsniped'>Dhruv | @notsniped in Github</a></h4>
+            <div id='myModal' class='modal fade'>
+                <div class='modal-dialog'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <button class='close' data-dismiss='modal' title='Close'>&times;</button>
+                            <h4>Instructions</h4>
+                        </div>
+                        <div class='modal-body'>
+                            <h1>How to Play</h1>
+                            <hr>
+                            <br>
+                            <b><u>NOTE: You can only play this game on Windows/MacOS/Linux. No support is provided for iOS/iPadOS/Android/other OSes.</u></b>
+                            <br><br>
+                            <p>In this game you compete against a JavaScript AI in a game of Ping-Pong. To move the paddle up, simply move your cursor upwards. To move your paddle down, move your corsor down.<br>You will get 6 lives. If you die 6 times while playing, you completely lose the game. But if you want to you can also restart it.<b><br><br>The game in itself is very self explainatory, you should be able to play it with ease. Enjoy!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+    <script src="script.js"></script>
+</html>
+

@@ -1,0 +1,57 @@
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    font-weight: bold;  
+}
+#instruction {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+#play {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+    height: 40px;
+}
+.modal-dialog {
+    width: 90%;
+}
+#restart {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 20px;
+    height: 40px;
+}
+#status {
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+}
+#canvas {
+    border-radius: 5px;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    background-color: black;
+}
+h4 {
+    background-color: #f5f5f5;
+    line-height: 2;
+    margin: 0px;
+}
+.copy_right_footer {
+    position: fixed;
+    background-color: #111111;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    line-height: 3;
+    text-align: center;
+}

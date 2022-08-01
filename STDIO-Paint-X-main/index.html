@@ -1,0 +1,28 @@
+<html>
+    <head>  
+        <title>STDIO Paint X</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript"></script>
+    </head>
+    <body class="body_background">
+        <div align="center">
+        <h1>STDIO Paint X</h1>
+        <canvas id="myCanvas" width="1000" height="700"></canvas>
+        <br>
+        <br>
+        <!--Additional activity -->
+            <span>Radius - </span>  
+            <input type="number" id="radius" value=20>
+            <span>Color - </span>  
+            <input type="text" id="color" value="Red">
+            <span>Width Of the line  - </span>  
+            <input type="number" id="width_of_line" value="2">
+            <button onclick="clearArea();" class="btn btn-danger">Clear Area</button>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
