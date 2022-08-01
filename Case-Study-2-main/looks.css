@@ -1,0 +1,44 @@
+hr {
+    background-color: black;
+}
+body {
+    font-size: 15px;
+    height: 100%;
+    margin: 0px;
+    background: linear-gradient(lightblue 0%, black 100%);
+    background-repeat: no-repeat;
+}
+#top-info-bar {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 4.5px;
+    border-radius: 7px;
+    background: white;
+    box-shadow: 0 4px 7px 0 darkgray;
+}
+.element-card {
+    background: rgba(255, 255, 255, 0.719);
+    backdrop-filter: blur(8px);
+    padding: 5px;
+    border-radius: 10px;
+}
+.element-card img {
+    border-radius: 4px;
+}
+.results {
+    border-radius: 9.5px;
+    background: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 17px;
+}
+#copyright-footer {
+    color: white;
+    font-size: 15px;
+    border-width: 1px;
+    margin: 0px;
+    padding: 1px;
+}

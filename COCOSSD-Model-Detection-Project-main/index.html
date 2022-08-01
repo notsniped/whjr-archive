@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Object Detection</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body background='background-V2.jpg'>
+        <center>
+            <h1 id='title'>Object Detection from WhiteHat Jr</h1>
+            <br>
+            <br>
+            <button id='button-bedroom' class='btn btn-primary' onclick='redirect("bedroom");'>Bedroom</button>
+            <br><br>
+            <button id='button-tv-ac' class='btn btn-primary' onclick='redirect("tv_ac");'>TV and AC</button>
+            <br><br>
+            <button id='button-desk' class='btn btn-primary' onclick='redirect("desk");'>Desk</button>
+            <br><br>
+            <button id='button-bottles' class='btn btn-primary' onclick='redirect("bottles");'>Bottles</button>
+            <br><br>
+            <button id='button-fruit-basket' class='btn btn-primary' onclick='redirect("fruitbasket");'>Fruit Basket</button>
+        </center>
+    </body>
+    <script src='runtime.js'></script>
+</html>
