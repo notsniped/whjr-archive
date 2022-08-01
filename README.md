@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300px" src="https://raw.githubusercontent.com/notsniped/whjr-archive/main/resources/whjr_nobg.png">
+  <img width="250px" src="https://raw.githubusercontent.com/notsniped/whjr-archive/main/resources/whjr_nobg.png">
 </p>
 
 <h1 align='center'>WHJr Archive, the place for all WhiteHatJr web projects.</h1>
