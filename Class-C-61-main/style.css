@@ -1,0 +1,133 @@
+
+body {
+    margin: 0;
+    padding-top: 800px;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+
+}
+
+#welcome {
+
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 0;
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    
+}
+
+
+
+h1 {
+
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 300;
+
+}
+
+#name {
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: 'Cinzel Decorative', cursive;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: monospace;
+}
+
+#bio {
+    font-family: 'Cinzel Decorative', cursive;
+
+    padding: 50px;
+    text-align: center;
+}
+
+.line {
+    height: 6px;
+    background-color: #000;
+    width: 70px;
+    margin: 8px auto;
+}
+
+
+p {
+    font-size: 17px;
+}
+
+.parallax-inner {
+
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.article:hover {
+    color:fuchsia;
+}
+
+.menu {
+    position: fixed;
+    background: white;
+    width: 100%;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+    text-shadow: 2px 2px gainsboro;
+}
+
+.links {
+    display: inline;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: system-ui;
+    font-size; 20px;
+}
+
+.links:hover {
+    font-size: 25px;
+    text-decoration: overline;
+}
+
+#writings a {
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+.contact_1 a {
+    color: white;
+    text-shadow: none;
+}
+
+.contact_1 h3 {
+    display: inline;
+}
+
+#contact {
+    background: firebrick;
+}
+
+#contact iframe {
+    width: 100%;
+}
