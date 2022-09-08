@@ -1,0 +1,57 @@
+<html>
+  
+    <head>
+        <title>Farming Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <script>
+        function areaCalc() {
+            var area = Number(document.getElementById("length").value) * Number(document.getElementById("length").value);
+            document.getElementById("labelArea").innerHTML = area;
+            console.log(area);
+        }
+        function periCalc() {
+            var peri_1 = Number(document.getElementById("length").value) + Number(document.getElementById("length").value);
+            var peri_2 = 2 * peri_1;
+            console.log(peri_1);
+            console.log(peri_2);
+            document.getElementById("labelLength").innerHTML = peri_2;
+        }
+
+        function showWin() {
+            window.alert("Formula for area= side x side; Formula for length= 2 x (side + side)");
+        }
+    </script>
+
+    <body>
+        <h1 id="title">Farming Calculator</h1>
+        <hr>
+        <br>
+        <h3>Select the length of the side of the land:</h3>
+        <input type="number" id="length">
+        <br>
+        <br>
+        <button id="buttonCalc" onclick="areaCalc(), periCalc()">Calculate Area & Length of Fence</button>
+        <br>
+        <br>
+        <hr>
+        <h3>Result:</h3>
+        <br>
+        <div>Area of the Farm:
+        <div id="labelArea">0</div>
+        </div>
+        <br>
+        <div>Length of Fencing Required to be Bought:
+        <div id="labelLength">0</div>
+        </div>
+        <hr>
+        <br>
+        <button id="help" onclick="showWin()">How Is It Done?</button>
+    </body>
+
+</html>
