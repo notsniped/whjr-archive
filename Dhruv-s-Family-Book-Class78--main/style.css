@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-color: #dbf6e9;
+}
+img{
+    text-align: center;
+    border: 15px groove #31326f;
+    margin: 10px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+button{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 8px; 
+}
