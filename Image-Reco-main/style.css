@@ -1,0 +1,26 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: lightblue;
+}
+.heading {
+    width: 80%;
+    font-size: 22px;
+}
+.name_of_objects{
+    font-size: 18px;
+}
+#camera {
+    border-radius: 6px;
+    border: 2px dashed black;
+    width: 400px;
+    height: 350px;
+}
+#result {
+    border-radius: 6px;
+    width: 350px;
+    height: 300px;
+}
+#result_object_name, #result_object_accuracy {
+    color: green;
+    font-weight: bold;
+}
