@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login - LetsChat</title>
+		<link rel="shortcut icon" href="icons8-chat-room-96.png">
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="looks.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1 class="header">	
+				LetsChat <sup><img src="icons8-chat-room-96.png"></sup>
+			</h1>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+				<img src="logo.png" class="logo">
+				<h3>Great to have you back!</h3>
+				<h4>Who are you?&nbsp;<a href="#">No account? Create one.</a></h4>
+				<div class="form-group">
+					<label>User Name:</label>
+					<input type="text" id="user_name" class="form-control" placeholder="Username">
+					<br>
+					<input id="Checkbox_overprotective" type="checkbox">&nbsp;<label title="If this is not your PC/Mac, for example, like a computer at an airport, check this option for your safety.">This is not my computer.</label>
+					<br>
+					<input id="Checkbox_offline_browsing" type="checkbox">&nbsp;<label title="If you check this option, then you will be logged in, but your friends cannot see that you're online.">Appear as offline.</label>
+				</div>
+				<button id="login_button" class="btn btn-success" onclick="addUser()">Log in</button>
+				<br>
+				<br>
+			</div>
+		</center>
+	</body>
+</html>
